@@ -1,0 +1,44 @@
+type: LaserTurret
+size: 1
+shootEffect: shootSmallSmoke
+shootCone: 40
+recoil: 1
+size: 1
+shake: 0.15
+range: 150
+reload: 9
+firingMoveFract: 0.5
+shootDuration: 230
+shootSound: spark
+loopSound: beam
+loopSoundVolume: 0.3
+shootType: {
+	type: ContinuousLaserBulletType
+	damage: 7
+	length: 160
+	backLength: 3
+	width: 3
+	oscMag: 1
+	hitEffect: hitMeltdown
+	hitColor: meltdownHit
+	status: melting
+	drawSize: 420
+	incendChance: 0.1
+	incendSpread: 3
+	incendAmount: 1
+	ammoMultiplier: 1
+}
+scaledHealth: 650
+consumes: {
+	coolant: { amount: 0.05 }
+	power: 1.75
+}
+requirements: [
+  copper/120
+  lead/35
+  graphite/30
+  silicon/30
+  surge-alloy/30
+]
+category: turret
+research: lancer

@@ -1,0 +1,14 @@
+// sprite fixed by Dazlezlezle
+type: CoreBlock
+size: 1
+health: 500
+itemCapacity: 400
+unitType: alpha
+unitCapModifier: 4
+isFirstTier: true
+requirements: [
+  copper/120
+  lead/80
+]
+category: effect
+research: core-shard

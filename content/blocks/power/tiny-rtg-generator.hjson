@@ -1,0 +1,26 @@
+type: ConsumeGenerator
+size: 1
+powerProduction: 1.1
+itemDuration: 3600
+envEnabled: -1
+generateEffect: generatespark
+drawer: {
+	type: DrawMulti
+	drawers: [
+		DrawDefault
+		DrawWarmupRegion
+	]
+}
+consumes: {
+  itemRadioactive: { amount: 1 }
+}
+itemCapacity: 5
+requirements: [
+  lead/25
+  thorium/12
+  silicon/18
+  plastanium/18
+  phase-fabric/6
+]
+category: power
+research: thorium-reactor

@@ -1,0 +1,55 @@
+type: GenericCrafter
+size: 1
+drawer: {
+  type: DrawMulti
+  drawers: [
+    DrawDefault
+    {
+      type: DrawFlame
+      lightRadius: 40
+      flameRadius: 1.5
+      flameRadiusIn: 0.9
+      flameRadiusMag: 1
+      flameRadiusInMag: 0.5
+    }
+  ]
+}
+hasPower: true
+hasItems: true
+hasLiquids: false
+health: 100
+itemCapacity: 12
+craftTime: 480
+requirements: [
+  copper/10
+  silicon/10
+  lead/10
+  titanium/10
+]
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      copper/3
+      lead/4
+      titanium/2
+      silicon/3
+    ]
+  }
+  /*
+  // crafters can't take optional liquids for overclocking can they
+  liquids: {
+    optional: true
+    booster: true
+    liquids: [
+      {
+        amount: 1
+        liquid: slag
+      }
+    ]
+  }
+  */
+}
+outputItem: surge-alloy/1
+category: crafting
+research: melter

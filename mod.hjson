@@ -1,0 +1,9 @@
+name: tiny-things
+displayName: Tiny Things
+author: YellowAfterlife
+description:
+  '''
+  Adds miniature versions of various buildings.
+  '''
+version: 1.0.0
+minGameVersion: 136.1

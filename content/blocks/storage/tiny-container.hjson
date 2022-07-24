@@ -1,0 +1,11 @@
+type: StorageBlock
+size: 1
+health: 100
+itemCapacity: 50
+requirements: [
+  copper/30
+  lead/20
+]
+category: effect
+research: router
+iconOverride: ["-preview"]
