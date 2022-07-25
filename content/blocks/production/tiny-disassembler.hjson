@@ -1,0 +1,31 @@
+type: Separator
+size: 1
+hasPower: true
+craftTime: 120
+itemCapacity: 5
+consumes: {
+	items: {
+		items: [
+			scrap/1
+		]
+	}
+	power: 0.5
+	liquid: {
+		amount: 0.015
+		liquid: slag
+	}
+}
+results: [
+	sand/2
+	graphite/1
+	titanium/1
+	thorium/1
+]
+requirements: [
+	lead/20
+	silicon/20
+	titanium/20
+	plastanium/10
+]
+category: crafting
+research: separator

@@ -1,0 +1,52 @@
+type: ItemTurret
+size: 1
+range: 350
+ammoTypes: {
+	"surge-alloy": {
+		type: PointBulletType
+		hitEffect: blastExplosion
+		//smokeEffect: smokeCloud
+		despawnEffect: blastExplosion
+		// alternatives: ballfire, fireSmoke, shootHealYellow
+		trailEffect: railTrail
+		trailColor: "ff0000" // doesn't work?
+		trailInterval: 12
+		damage: 100
+		buildingDamageMultiplier: 0.2
+		speed: 350
+		hitShake: 1
+		ammoMultiplier: 3
+	}
+}
+// railTrail starts behind the source point so we'll move the projectile forward
+// so that it looks better
+shoot: {
+	type: ShootBarrel
+	barrels: [0, 16, 0]
+}
+maxAmmo: 10
+rotateSpeed: 2
+reload: 150
+ammoUseEffect: casing1
+recoil: 1
+cooldownTime: 150
+shake: 0.5
+shootCone: 2
+shootSound: railgun
+unitSort: strongest
+envEnabled: -1
+coolantMultiplier: 3.5
+scaledHealth: 600
+consumes: {
+	coolant: { amount: 1 }
+	power: 1
+}
+requirements: [
+  copper/100
+  metaglass/60
+  silicon/60
+  plastanium/20
+  surge-alloy/30
+]
+category: turret
+research: lancer

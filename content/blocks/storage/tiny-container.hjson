@@ -8,4 +8,3 @@ requirements: [
 ]
 category: effect
 research: router
-iconOverride: ["-preview"]
