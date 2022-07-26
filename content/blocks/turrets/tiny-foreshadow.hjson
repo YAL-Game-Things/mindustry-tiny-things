@@ -38,7 +38,7 @@ envEnabled: -1
 coolantMultiplier: 3.5
 scaledHealth: 600
 consumes: {
-	coolant: { amount: 1 }
+	coolant: { amount: 0.1 }
 	power: 1
 }
 requirements: [
@@ -49,4 +49,4 @@ requirements: [
   surge-alloy/30
 ]
 category: turret
-research: lancer
+research: foreshadow

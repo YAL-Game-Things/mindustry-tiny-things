@@ -1,0 +1,77 @@
+type: ItemTurret
+size: 1
+range: 200
+ammoTypes: {
+	"graphite": {
+		type: BasicBulletType
+		speed: 7.5
+		damage: 10
+		hitSize: 2.4
+		width: 7
+		height: 11
+		shootEffect: shootSmall
+		ammoMultiplier: 8
+		knockback: 0.03
+	}
+	"thorium": {
+		type: BasicBulletType
+		speed: 8
+		damage: 16
+		hitSize: 2.5
+		width: 8
+		height: 12
+		shootEffect: shootSmall
+		ammoMultiplier: 10
+		pierceCap: 2
+		pierceBuilding: true
+		knockback: 0.07
+	}
+	"pyratite": {
+		type: BasicBulletType
+		speed: 7
+		damage: 14
+		width: 8
+		height: 11
+		frontColor: lightishOrange
+		backColor: lightOrange
+		status: burning
+		hitEffect: {
+			type: MultiEffect
+			effects: [
+				hitBulletSmall
+				fireHit
+			]
+		}
+		makeFire: true
+		pierceCap: 2
+		pierceBuilding: true
+		knockback: 0.06
+		ammoMultiplier: 12
+		splashDamage: 4
+		splashDamageRadius: 15
+	}
+}
+reload: 14
+recoil: 0.3
+recoilTime: 28
+coolantMultiplier: 2
+inaccuracy: 2
+consumes: {
+	coolant: { amount: 0.1 }
+}
+shoot: {
+	type: ShootAlternate
+	spread: 2
+}
+shootCone: 24
+shake: 0.25
+requirements: [
+	copper/90
+	graphite/30
+	thorium/25
+	plastanium/17
+	surge-alloy/25
+]
+scaledHealth: 750
+category: turret
+research: spectre
