@@ -1,0 +1,12 @@
+type: CoreBlock
+size: 2
+health: 800
+itemCapacity: 1600
+unitType: alpha
+unitCapModifier: 6
+requirements: [
+  copper/500
+  lead/350
+]
+category: effect
+research: tiny-things-tiny-core
