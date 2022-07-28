@@ -1,0 +1,22 @@
+type: MassDriver
+size: 1
+itemCapacity: 40
+reload: 200
+range: 200
+consumes: {
+	power: 0.45
+}
+shootEffect: shootSmall
+smokeEffect: shootSmallSmoke
+receiveEffect: mineSmall
+shootSound: shoot
+scaledHealth: 150
+shake: 0.25
+knockback: 1
+requirements: [
+	titanium/25
+	silicon/15
+	lead/25
+	thorium/5
+]
+research: mass-driver
